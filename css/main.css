@@ -1,0 +1,6 @@
+/* Kortar ner koden i index.html så så det blir lite bättre organiserat */
+@import "./base.css";
+@import "./flex.css";
+@import "./layout.css";
+@import "./mediaqueries.css";
+@import "./dropdownbtn.css"

@@ -1,0 +1,108 @@
+/* Layout kommer vi att använda för att fixa till layouten för hemsidan */
+
+/*** Widths ***/
+.max-width{max-width: 192rem;}   /* Detta fall 1920px (pga ändrad 1rem = 10px).  Max bredd när man drar ut sidan eller för stora skärmar */
+
+/*** Position ***/
+.pos-relative { position: relative !important;}
+.pos-absolute { position: absolute !important;}
+.overflow-hidden {overflow: hidden;} /*De content som är för stora för containern/elementet kapas av är hidden/gömd*/
+
+/*** Margins ***/
+.mright-auto, .mx-auto{margin-right: auto;} /* mx-auto kommer att centrera */
+.mleft-auto, .mx-auto{margin-left: auto;}
+
+.m-6 { margin: var(--distance-6);}
+.m-16 { margin: var(--distance-16);}
+
+.mt-0, .my-0 { margin-top: var(--distance-0);}       /* 0rem */
+.mb-0, .my-0 { margin-bottom: var(--distance-0);}
+.mt-1, .my-1 { margin-top: var(--distance-1);}       /* 0.25rem */
+.mb-1, .my-1 { margin-bottom: var(--distance-1);}
+.mt-2, .my-2 { margin-top: var(--distance-2);}       /* 0.5rem */
+.mb-2, .my-2 { margin-bottom: var(--distance-2);}
+.mt-4, .my-4 { margin-top: var(--distance-4);}       /* 1rem */
+.mb-4, .my-4 { margin-bottom: var(--distance-4);}
+.mt-6, .my-6 { margin-top: var(--distance-6);}       /* 1.5rem */
+.mb-6, .my-6 { margin-bottom: var(--distance-6);}
+.mt-8, .my-8 { margin-top: var(--distance-8);}       /* 2rem */
+.mb-8, .my-8 { margin-bottom: var(--distance-8);}
+.mt-10, .my-10 { margin-top: var(--distance-10);}     /* 2.5rem */
+.mb-10, .my-10 { margin-bottom: var(--distance-10);}
+.mt-12, .my-12 { margin-top: var(--distance-12);}     /* 3rem */
+.mb-12, .my-12 { margin-bottom: var(--distance-12);}
+.mt-14, .my-14 { margin-top: var(--distance-14);}     /* 3.5rem */
+.mb-14, .my-14 { margin-bottom: var(--distance-14);}
+.mt-16, .my-16 { margin-top: var(--distance-16);}     /* 4rem */
+.mb-16, .my-16 { margin-bottom: var(--distance-16);}
+
+.mr-2, .mx-2 {margin-right: var(--distance-2);}
+.mr-2, .mx-2 {margin-right: var(--distance-2);}
+.mr-4, .mx-4 {margin-right: var(--distance-4);}
+.ml-4, .mx-4 {margin-left: var(--distance-4);}
+.mr-6, .mx-6 {margin-right: var(--distance-6);}
+.ml-6, .mx-6 {margin-left: var(--distance-6);}
+
+/*** Paddings ***/
+.padding-3{ padding: var(--distance-3);}
+.padding-4{ padding: var(--distance-4);}
+.padding-5{ padding: var(--distance-5);}
+.padding-6{ padding: var(--distance-6);}
+.padding-8{ padding: var(--distance-8);}
+.padding-12{ padding: var(--distance-12);}
+.padding-16{ padding: var(--distance-16);}
+
+.pr-4, .px-4 {padding-right: var(--distance-4);}
+.pl-4, .px-4 {padding-left: var(--distance-4);}
+.pr-12, .px-12 {padding-right: var(--distance-12);}
+.pl-12, .px-12 {padding-left: var(--distance-12);}
+
+.pt-2, .py-2 {padding-top: var(--distance-2);}
+.pb-2, .py-2 {padding-bottom: var(--distance-2);}
+
+/*** Typography / Text ***/
+.text-decoration-none {text-decoration: none;}
+.text-center { text-align: center;}
+.text-uppercase { text-transform: uppercase;}
+.text-bold { font-weight: bold;}
+
+.text-size-xxs {font-size: var(--display-xxs);}
+.text-size-xs {font-size: var(--display-xs);}
+.text-size-sm {font-size: var(--display-sm);}
+.text-size-md {font-size: var(--display-md);}
+.text-size-lg {font-size: var(--display-lg);}
+.text-size-xl {font-size: var(--display-xl);}
+.text-size-xxl {font-size: var(--display-xxl);}
+
+.lh-sm {line-height: var(--line-height-sm);}
+.lh-md {line-height: var(--line-height-md);}
+.lh-lg {line-height: var(--line-height-lg);}
+
+/*** Circle ***/
+.circle {border-radius: 100%;} /* Rundar av hörnen på squares så det blir en circle */
+
+/*** Shadows ***/
+.shadow-sm {box-shadow: var(--shadow-small-light);}
+.shadow-lg {box-shadow: var(--shadow-large-light);}
+
+/*** Borders ***/
+.border-xs-white { border: var(--border-xs-white);}
+.border-radius-sm {border-radius: var(--border-radius-sm);}
+.border-bottom-xs {border-bottom: var(--border-xs);} /* Skapar en svag grå linje över hela skärmen*/
+.border-sm {border: var(--border-sm);}
+.border-lg {border: var(--border-lg);}
+.border-transparent { border: var(--border-transparent);}
+
+/*** Images ***/
+.logo-width {max-width: 10rem;} /* Loggo storlek */
+.img-lg-width {max-width: 60%;}
+
+
+
+
+
+
+
+
+
+
