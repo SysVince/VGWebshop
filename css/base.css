@@ -57,6 +57,7 @@
 
     /*** Borders (Testa sig fram vad man vill ha för borders) ***/
     --border-xs-white: 0.1rem solid var(--color-white);
+    --border-xs-dark: 0.1rem solid var(--color-dark);
     --border-xs: 0.1rem solid var(--color-light);
     --border-sm: 0.2rem solid var(--color-light);
     --border-lg: 0.4rem solid var(--color-light);

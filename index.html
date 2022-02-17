@@ -18,9 +18,10 @@
 
 <body>
     <!-- Header Navigation -->
-    <header class="bg-primary">
+    <header class=" bg-primary">
         <!-- Navigation -->
-        <nav class="display-flex justify-content-between align-items-center text-white padding-6">
+        <nav class="display-flex justify-content-between align-items-center text-white padding-6 mx-auto max-width">
+
             <!-- Dropdown -->
             <div class="dropdown">
                 <button class="dropbtn">
@@ -86,17 +87,40 @@
 
 
             </div>
-
+        
         </nav>
-
     </header>
 
-    <!-- Searchbar och ikoner -->
-    <section class="display-flex justify-content-center">
-        <!-- Huvud container för searchbar och ikoner -->
-        <div class="display-flex justify-content-center max-width ">
+    <!-- Huvud Searchbar och ikoner -->
+    <section class="">
+        <!-- container för searchbar och ikoner -->
+        <div class="display-flex justify-content-between align-items-center text-white padding-6 mx-auto max-width">
+            <!-- My store Logo -->
             <a href="#"><img src="images/logo/logo.png" class="logo-width" alt="My store logo"></a>
+            <!--Container för ikon och searchbar-->
+            <div class="display-flex flex-grow mx-6">
+                <!--Ikonen-->
+                <i class="fa fa-search text-dark padding-4 border-xs-dark"></i>
+                
+                <!--search bar-->
+                <input type="text" class="padding-4 border-xs-dark min-width-xxl" placeholder="Search products">
+            </div>
+                <!-- Ikonerna på sidan -->    
+            <div class="display-flex justify-content-between">
+                <!-- (a-tag) En av de länkarna/ikonen -->
+                <a href="#" class="display-flex flex-column align-items-center text-decoration-none pos-relative">
+                    <!-- Bakgrunden bakom ikonen -->
+                    <div class="display-flex align-items-center justify-content-between bg-cozy padding-4 border-radius-sm shadow-sm">
+                        <!-- Ikon från fontawesome shopping-->
+                        <i class="fa fa-shopping-basket text-white"></i>
+                    </div>
+                    <!-- Siffran ovanför shopping basket -->
+                    <span class="text-white pos-absolute icon-badge circle bg-success border-xs-white text-size-xxs">5</span>
+                </a>
 
+            </div>
+                
+            
         </div>
 
     </section>

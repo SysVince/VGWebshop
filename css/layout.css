@@ -2,6 +2,7 @@
 
 /*** Widths ***/
 .max-width{max-width: 192rem;}   /* Detta fall 1920px (pga ändrad 1rem = 10px).  Max bredd när man drar ut sidan eller för stora skärmar */
+.min-width-xxl{min-width: 100%;} /*Fyller upp hela containern*/
 
 /*** Position ***/
 .pos-relative { position: relative !important;}
@@ -44,6 +45,7 @@
 .ml-6, .mx-6 {margin-left: var(--distance-6);}
 
 /*** Paddings ***/
+.padding-2{ padding: var(--distance-2);}
 .padding-3{ padding: var(--distance-3);}
 .padding-4{ padding: var(--distance-4);}
 .padding-5{ padding: var(--distance-5);}
@@ -87,6 +89,7 @@
 
 /*** Borders ***/
 .border-xs-white { border: var(--border-xs-white);}
+.border-xs-dark { border: var(--border-xs-dark);}
 .border-radius-sm {border-radius: var(--border-radius-sm);}
 .border-bottom-xs {border-bottom: var(--border-xs);} /* Skapar en svag grå linje över hela skärmen*/
 .border-sm {border: var(--border-sm);}
