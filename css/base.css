@@ -1,11 +1,10 @@
-/* Base använder vi för grundinställningar för sidan. Vissa saker kan läggas till och tasbort i framtiden */
 /* Alla sidor kommer att använda olika grundinställningar */
 
 :root {
     /* Root används för att skapa variabler */
     /*** Base Colors ***/
     --color-primary: rgb(43, 41, 146);
-    --color-secondary: #6c757d;
+    --color-secondary: #adb3b8;
     --color-success: #b5d56a;
     --color-info: #84bed6;
     --color-warning: #f0c24b;
@@ -27,42 +26,36 @@
     --display-xl: 2.5rem;
     --display-xxl: 3rem;
 
-    /*** Line Heights (Får testa sig fram) ***/
+    /*** Line Heights ***/
     --line-height-sm: 1rem;
     --line-height-md: 1.6rem;
     --line-height-lg: 3rem;
 
-    /*** Distances (Vissa används nog inte) ***/
+    /*** Distances ***/
     --distance-0: 0rem;
     --distance-1: .25rem;
     --distance-2: .5rem;
-    --distance-3: .75rem;
+    --distance-3: 1rem;
     --distance-4: 1rem;
-    --distance-5: 1.25rem;
-    --distance-6: 1.5rem;
-    --distance-7: 1.75rem;
-    --distance-8: 2rem;
-    --distance-9: 2.25rem;
-    --distance-10: 2.5rem;
-    --distance-11: 2.75rem;
-    --distance-12: 3rem;
-    --distance-13: 3.25rem;
-    --distance-14: 3.5rem;
-    --distance-15: 3.75rem;
-    --distance-16: 4rem;
+    --distance-5: 1.5rem;
+    --distance-6: 2rem;
+    --distance-7: 2.5rem;
+    --distance-8: 3rem;
+    --distance-9: 3.5rem;
+    --distance-10: 4rem;
 
     /*** Shadows ***/
     --shadow-small-light: 0.15rem 0.15rem 0 rgba(0, 0, 0, .1);
     --shadow-large-light: 0.25rem 0.25rem 0 rgba(0, 0, 0, .1);
 
-    /*** Borders (Testa sig fram vad man vill ha för borders) ***/
+    /*** Borders ***/
     --border-xs-white: 0.1rem solid var(--color-white);
     --border-xs-dark: 0.1rem solid var(--color-dark);
     --border-xs: 0.1rem solid var(--color-light);
     --border-sm: 0.2rem solid var(--color-light);
     --border-lg: 0.4rem solid var(--color-light);
 
-    --border-radius-sm: 0.5rem; /* Rundar av hörn, Kan även användas för att göra circlar */
+    --border-radius-sm: 0.5rem; /* Rundar av hörn */
     --border-success: 0.2rem solid var(--color-success);
     --border-transparent: 0.1 solid var(--color-transparent);
 }
@@ -98,7 +91,7 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: "Dosis", "Open Sans", sans-serif;
     font-weight: 700; /* Tjockleken på fonten */
-    letter-spacing: 0.05rem; /* Mellanrum varje bokstav */
+    letter-spacing: 0.05rem; /* Mellanrum mellan varje bokstav */
 }
 .h1, h1{
     font-size: var(--distance-14);
