@@ -10,8 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-
+    <!-- Fontawesome version 5 -->
     <script src="https://kit.fontawesome.com/e67b46bc7a.js" crossorigin="anonymous"></script>
+
     <link href="css/main.css" rel="stylesheet">
 
 </head>
@@ -20,7 +21,7 @@
     <!-- Header Navigation -->
     <header class="bg-primary">
         <!-- Navigation -->
-        <nav class="display-flex justify-content-between align-items-center text-white padding-1 mx-auto max-width">
+        <nav class="display-flex justify-content-between align-items-center text-white padding-4 mx-auto max-width">
 
             <!-- Dropdown -->
             <div class="dropdown">
@@ -37,11 +38,15 @@
             </div>
 
             <!-- Ikoner i mitten -->
-            <div class="display-flex justify-content-between align-items-center">
-                <i class="fa fa-phone-alt mr-1"></i>
-                <span>555 555 5555</span>
-                <i class="fa fa-envelope-square mr-1 ml-2"></i>
-                <span>info@mystore.com</span>
+            <div class="display-flex justify-content-center align-items-center">
+                <div class="nav-mq-phone">
+                    <i class="fa fa-phone-alt mr-1"></i>
+                    <span>555 555 5555</span>
+                </div>
+                <div class=" ml-6 nav-mq-email">
+                    <i class="fa fa-envelope-square mr-1"></i>
+                    <span>info@mystore.com</span>
+                </div>
             </div>
 
             <!-- Ikoner på sidan -->
@@ -55,7 +60,7 @@
                 </a>
 
                 <!-- En av ikonerna -->
-                <a href="#" class="text-decoration-none ml-1">
+                <a href="#" class="text-decoration-none ml-2">
                     <!-- Bakgrunden bakom ikonen -->
                     <div class="display-flex justify-content-between align-items-center bg-white padding-2 border-radius-sm">
                         <i class="fa fa-twitter fa-lg text-primary"></i>
@@ -63,7 +68,7 @@
                 </a>
 
                 <!-- En av ikonerna -->
-                <a href="#" class="text-decoration-none ml-1">
+                <a href="#" class="text-decoration-none ml-2">
                     <!-- Bakgrunden bakom ikonen -->
                     <div class="display-flex justify-content-between align-items-center bg-white padding-2 border-radius-sm">
                         <i class="fa fa-instagram fa-lg text-primary"></i>
@@ -71,7 +76,7 @@
                 </a>
 
                 <!-- En av ikonerna -->
-                <a href="#" class="text-decoration-none ml-1">
+                <a href="#" class="text-decoration-none ml-2">
                     <!-- Bakgrunden bakom ikonen -->
                     <div class="display-flex justify-content-between align-items-center bg-white padding-2 border-radius-sm">
                         <i class="fa fa-pinterest-p fa-lg text-primary"></i>
@@ -87,24 +92,43 @@
         </nav>
     </header>
 
-    <!-- Huvud Searchbar och ikoner -->
-    <section class="">
-        <!-- container för searchbar och ikoner -->
+    <!-- Huvud Container Dropdown, Searchbar och Ikoner -->
+    <section class="border-bottom-xs">
+        <!-- container för dropdown, searchbar och ikoner -->
         <div class="display-flex justify-content-between align-items-center text-white padding-3 mx-auto max-width">
+            
             <!-- My store Logo -->
-            <a href="#"><img src="images/logo/logo.png" class="display-flex justify-content-center align-items-center logo-width pr-2" alt="My store logo"></a>
+            <a href="#"><img src="images/logo/logo.png" class="display-flex justify-content-center align-items-center logo-width px-4" alt="My store logo"></a>
+            
             <!--Container för ikon och searchbar-->
-            <div class="display-flex align-items-center flex-grow">
+            <div class="display-flex align-items-center flex-grow search-mq-1">
                 <!--Ikonen-->
-                <i class="fa fa-search text-dark padding-1 border-xs-dark bg-secondary"></i>
+                <button type="submit" class="searchbutton"><i class="fa fa-search"></i></button>
                 <!--search bar-->
-                <input type="text" class="padding-1 border-xs-dark width-full" placeholder="Search products">
+                <input type="text" class="searchbar" placeholder="Search products">
             </div>
 
                 <!-- Ikonerna på sidan -->    
-            <div class="display-flex justify-content-between ml-1">
-                <!-- (a-tag) En av de länkarna/ikonen -->
-                <a href="#" class="display-flex flex-column align-items-center text-decoration-none pos-relative">
+            <div class="display-flex justify-content-between ml-4">
+
+                      <!-- A-tag container för ikon och text -->
+                      <a href="#"  class="display-flex flex-column align-items-center pr-6 display-none menu-mq">
+                        <!-- Container för ikon -->
+                        <div class="pos-relative">
+                        <!-- Bakgrunden bakom ikonen -->
+                        <div class="display-flex align-items-center justify-content-between padding-2">
+                            <!-- Ikon från fontawesome shopping-->
+                            <i class="fa fa-bars fa-lg text-primary"></i>
+                        </div>
+                    
+                    </div>
+                        <span class="text-uppercase text-size-xs lh-md text-primary">Menu</span>
+                    </a>
+
+                <!-- A-tag container för ikon och text -->
+                <a href="#"  class="display-flex flex-column align-items-center pr-6">
+                    <!-- Container för ikon -->
+                    <div class="pos-relative">
                     <!-- Bakgrunden bakom ikonen -->
                     <div class="display-flex align-items-center justify-content-between padding-2">
                         <!-- Ikon från fontawesome shopping-->
@@ -112,12 +136,243 @@
                     </div>
                     <!-- Siffran ovanför shopping basket -->
                     <span class="text-white pos-absolute icon-badge circle bg-success border-xs-white text-size-xxs">5</span>
-                    <span class="text-uppercase">Favs</span>
+                </div>
+                    <span class="text-uppercase text-size-xs lh-md text-primary">Favs</span>
                 </a>
+
+                <!-- A-tag container för ikon och text -->
+                <a href="#" class="display-flex flex-column align-items-center pr-6">
+                    <!-- Container för ikon -->
+                    <div class="pos-relative">
+                    <!-- Bakgrunden bakom ikonen -->
+                    <div class="display-flex align-items-center justify-content-between padding-2">
+                        <!-- Ikon från fontawesome shopping-->
+                        <i class="fa fa-shopping-cart fa-lg text-primary"></i>
+                    </div>
+                    <!-- Siffran ovanför shopping basket -->
+                    <span class="text-white pos-absolute icon-badge circle bg-success border-xs-white text-size-xxs">3</span>
+                </div>
+                    <span class="text-uppercase text-size-xs lh-md text-primary">€1234</span>
+                </a>
+
+                <!-- A-tag container för ikon och text -->
+                <a href="#" class="display-flex flex-column align-items-center">
+                    <!-- Container för ikon -->
+                    <div class="pos-relative">
+                    <!-- Bakgrunden bakom ikonen -->
+                    <div class="display-flex align-items-center justify-content-between padding-2">
+                        <!-- Ikon från fontawesome shopping-->
+                        <i class="fa fa-wallet fa-lg text-primary"></i>
+                    </div>
+                    <!-- Siffran ovanför shopping basket -->
+                    <span class="text-white pos-absolute icon-badge circle bg-success border-xs-white text-size-xxs">0</span>
+                </div>
+                    <span class="text-uppercase text-size-xs lh-md text-primary">€0,0</span>
+                </a>0
             </div>
                 
             
         </div>
+
+        <!--Container för ikon och searchbar (Small Devices)-->
+        <div class="display-flex align-items-center mx-6 display-none search-mq-2">
+            <!--Ikonen-->
+            <button type="submit" class="searchbutton"><i class="fa fa-search"></i></button>
+            <!--search bar-->
+            <input type="text" class="searchbar" placeholder="Search products">
+        </div>
+
+    </section>
+
+    <!-- Huvud container Menu och produkt -->
+    <section class="flex-mq-menuProd display-flex padding-6">
+        <!-- Menu -->
+        <section class="mr-4 width-menu mb-6">
+            <!-- Container för menu -->
+            <div class="display-flex flex-column justify-content-center">
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-hdd text-info mr-2"></i>
+                    <span>Computers & Accessories</span>
+                </a>
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-tv text-info mr-2"></i>
+                    <span>TV, Video & Audio</span>
+                </a>
+                <!-- En meny -->
+                <div class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-mobile-alt fa-lg text-info mr-2"></i>
+                    <span>Smartphones & Tablets</span>
+                </div>
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-camera text-info mr-2"></i>
+                    <span>Photo Cameras</span>
+                </a>
+                 <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-video text-info mr-2"></i>
+                    <span>Video Cameras</span>
+                </a>
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-headphones text-info mr-2"></i>
+                    <span>Headphones</span>
+                </a>
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-clock text-info mr-2"></i>
+                    <span>Wearable Electronics</span>
+                </a>
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-print text-info mr-2"></i>
+                    <span>Printers & Ink</span>
+                </a> 
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-gamepad text-info mr-2"></i>
+                    <span>Video Games</span>
+                </a> 
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 bb-none text-dark">
+                    <i class="fa fa-volume-down text-info mr-2"></i>
+                    <span>Speakers & Home Music</span>
+                </a> 
+                <!-- En meny -->
+                <a href="#" class="border-sm padding-4 text-dark">
+                     <i class="fa fa-server text-info mr-2"></i>
+                     <span>HDD / SSD Data Storage</span>
+                </a> 
+
+                    
+
+            </div>
+
+        </section>
+
+        <!-- Produkter -->
+        <section class="flex-mq-column">
+            <!-- Container för produkter -->
+            <div class="display-flex flex-wrap mx-auto">
+                <!-- En produkt -->
+                <div class="display-flex border-sm ml-6 width-product padding-4 mb-6 pos-relative">
+                    <img src="images/products/08.jpg" class="img-product" alt="Image of product">
+                    <div class="bg-success pos-absolute icon-sale px-2">
+                        <span class="text-white">10% Off</span>
+                    </div>
+                    <!-- Beskrivningen -->
+                    <div class="display-flex flex-column padding-4">
+                        <h1>Surface Book 14 in.</h1>
+                        <span class="text-secondary text-size-xs">Computers & Accessoriess</span>
+                        <span class="my-4">€1250</span>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores neque magnam doloribus tenetur deleniti.</p>
+                        <a href=""><i class="far fa-heart fa-lg pos-absolute icon-favorite "></i></a>
+                        
+                        <a href=""><i class="fa fa-cart-plus fa-lg pos-absolute icon-cart"></i></a>
+                        <div class=" pos-absolute icon-rating">4.5<i class="far fa-star ml-2"></i></div>
+                    </div>
+                </div>
+                  <!-- En produkt -->
+                <div class="display-flex border-sm ml-6 width-product padding-4 mb-6 pos-relative">
+                    <img src="images/products/08.jpg" class="img-product" alt="Image of product">
+                    <div class="bg-success pos-absolute icon-sale px-2">
+                        <span class="text-white">10% Off</span>
+                    </div>
+                    <!-- Beskrivningen -->
+                    <div class="display-flex flex-column padding-4">
+                        <h1>Surface Book 14 in.</h1>
+                        <span class="text-secondary text-size-xs">Computers & Accessoriess</span>
+                        <span class="my-4">€1250</span>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores neque magnam doloribus tenetur deleniti.</p>
+                        <a href=""><i class="far fa-heart fa-lg pos-absolute icon-favorite "></i></a>
+                        
+                        <a href=""><i class="fa fa-cart-plus fa-lg pos-absolute icon-cart"></i></a>
+                        <div class=" pos-absolute icon-rating">4.5<i class="far fa-star ml-2"></i></div>
+                    </div>
+                </div>
+
+                <!-- En produkt -->
+                <div class="display-flex border-sm ml-6 width-product padding-4 mb-6 pos-relative">
+                    <img src="images/products/08.jpg" class="img-product" alt="Image of product">
+                    <div class="bg-success pos-absolute icon-sale px-2">
+                        <span class="text-white">10% Off</span>
+                    </div>
+                    <!-- Beskrivningen -->
+                    <div class="display-flex flex-column padding-4">
+                        <h1>Surface Book 14 in.</h1>
+                        <span class="text-secondary text-size-xs">Computers & Accessoriess</span>
+                        <span class="my-4">€1250</span>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores neque magnam doloribus tenetur deleniti.</p>
+                        <a href=""><i class="far fa-heart fa-lg pos-absolute icon-favorite "></i></a>
+                        
+                        <a href=""><i class="fa fa-cart-plus fa-lg pos-absolute icon-cart"></i></a>
+                        <div class=" pos-absolute icon-rating">4.5<i class="far fa-star ml-2"></i></div>
+                    </div>
+                </div>
+
+                <!-- En produkt -->
+                <div class="display-flex border-sm ml-6 width-product padding-4 mb-6 pos-relative">
+                    <img src="images/products/08.jpg" class="img-product" alt="Image of product">
+                    <div class="bg-success pos-absolute icon-sale px-2">
+                        <span class="text-white">10% Off</span>
+                    </div>
+                    <!-- Beskrivningen -->
+                    <div class="display-flex flex-column padding-4">
+                        <h1>Surface Book 14 in.</h1>
+                        <span class="text-secondary text-size-xs">Computers & Accessoriess</span>
+                        <span class="my-4">€1250</span>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores neque magnam doloribus tenetur deleniti.</p>
+                        <a href=""><i class="far fa-heart fa-lg pos-absolute icon-favorite "></i></a>
+                        
+                        <a href=""><i class="fa fa-cart-plus fa-lg pos-absolute icon-cart"></i></a>
+                        <div class=" pos-absolute icon-rating">4.5<i class="far fa-star ml-2"></i></div>
+                    </div>
+                </div>
+
+                <!-- En produkt -->
+                <div class="display-flex border-sm ml-6 width-product padding-4 mb-6 pos-relative">
+                    <img src="images/products/08.jpg" class="img-product" alt="Image of product">
+                    <div class="bg-success pos-absolute icon-sale px-2">
+                        <span class="text-white">10% Off</span>
+                    </div>
+                    <!-- Beskrivningen -->
+                    <div class="display-flex flex-column padding-4">
+                        <h1>Surface Book 14 in.</h1>
+                        <span class="text-secondary text-size-xs">Computers & Accessoriess</span>
+                        <span class="my-4">€1250</span>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores neque magnam doloribus tenetur deleniti.</p>
+                        <a href=""><i class="far fa-heart fa-lg pos-absolute icon-favorite "></i></a>
+                        
+                        <a href=""><i class="fa fa-cart-plus fa-lg pos-absolute icon-cart"></i></a>
+                        <div class=" pos-absolute icon-rating">4.5<i class="far fa-star ml-2"></i></div>
+                    </div>
+                </div>
+
+                <!-- En produkt -->
+                <div class="display-flex border-sm ml-6 width-product padding-4 mb-6 pos-relative">
+                    <img src="images/products/08.jpg" class="img-product" alt="Image of product">
+                    <div class="bg-success pos-absolute icon-sale px-2">
+                        <span class="text-white">10% Off</span>
+                    </div>
+                    <!-- Beskrivningen -->
+                    <div class="display-flex flex-column padding-4">
+                        <h1>Surface Book 14 in.</h1>
+                        <span class="text-secondary text-size-xs">Computers & Accessoriess</span>
+                        <span class="my-4">€1250</span>
+                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores neque magnam doloribus tenetur deleniti.</p>
+                        <a href=""><i class="far fa-heart fa-lg pos-absolute icon-favorite "></i></a>
+                        
+                        <a href=""><i class="fa fa-cart-plus fa-lg pos-absolute icon-cart"></i></a>
+                        <div class=" pos-absolute icon-rating">4.5<i class="far fa-star ml-2"></i></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
 
     </section>
 

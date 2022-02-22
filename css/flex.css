@@ -1,7 +1,7 @@
 /* Flex inställningar */
 /*** Display ***/
 .display-flex {display: flex;}
-.display-none {display: none;}
+.display-none {display: none;} /*Gömmer elementet*/
 
 /*** Flex ***/
 .flex-grow {flex-grow: 1;}

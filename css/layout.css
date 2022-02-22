@@ -4,6 +4,9 @@
 .max-width{max-width: 192rem;}   /* Detta fall 1920px (pga ändrad 1rem = 10px).  Max bredd när man drar ut sidan eller för stora skärmar */
 .min-width-xxl{min-width: 100%;} /*Fyller upp hela containern*/
 .width-full {width: 100%;}
+.width-product {max-width: 45rem;} /*Max storleken på en produkt*/
+.width-menu {min-width: 25rem ;} /*Min storleken på menyn*/
+
 
 /*** Position ***/
 .pos-relative { position: relative !important;}
@@ -34,8 +37,10 @@
 .ml-1, .mx-1 {margin-left: var(--distance-1);}
 .mr-2, .mx-2 {margin-right: var(--distance-2);}
 .ml-2, .mx-2 {margin-left: var(--distance-2);}
-.mr-3, .mx-3 {margin-right: var(--distance-3);}
-.ml-3, .mx-3 {margin-left: var(--distance-3);}
+.mr-4, .mx-4 {margin-right: var(--distance-4);}
+.ml-4, .mx-4 {margin-left: var(--distance-4);}
+.mr-6, .mx-6 {margin-right: var(--distance-6);}
+.ml-6, .mx-6 {margin-left: var(--distance-6);}
 
 /*** Paddings ***/
 .padding-1{ padding: var(--distance-1);}
@@ -47,17 +52,23 @@
 
 .pr-2, .px-2 {padding-right: var(--distance-2);}
 .pl-2, .px-2 {padding-left: var(--distance-2);}
+.pr-4, .px-4 {padding-right: var(--distance-4);}
+.pl-4, .px-4 {padding-left: var(--distance-4);}
 .pr-6, .px-6 {padding-right: var(--distance-6);}
 .pl-6, .px-6 {padding-left: var(--distance-6);}
 
 .pt-1, .py-1 {padding-top: var(--distance-1);}
 .pb-1, .py-1 {padding-bottom: var(--distance-1);}
+.pt-4, .py-4 {padding-top: var(--distance-4);}
+.pb-4, .py-4 {padding-bottom: var(--distance-4);}
 
 /*** Typography / Text ***/
 .text-decoration-none {text-decoration: none;}
 .text-center { text-align: center;}
 .text-uppercase { text-transform: uppercase;}
 .text-bold { font-weight: bold;}
+
+
 
 .text-size-xxs {font-size: var(--display-xxs);}
 .text-size-xs {font-size: var(--display-xs);}
@@ -80,10 +91,31 @@
 
 /*** Icons ***/
 .icon-badge {
-    top: -8px;
+    top: -4px;
     right: -8px;
-    padding: 0.25rem 0.75rem; /* Första värdet top and bottom. Andra värdet left and right */
+    padding: 0.2rem 0.6rem; /* Första värdet top and bottom. Andra värdet left and right */
 }
+
+.icon-favorite {
+    top: 5px;
+    right: 5px;
+}
+
+.icon-cart {
+    bottom: 10px;
+    left: 10px;
+}
+
+.icon-rating {
+    bottom: 5px;
+    right: 5px;
+}
+.icon-sale {
+    top: 0;
+    left: 0;
+}
+
+
 
 /*** Borders ***/
 .border-xs-white { border: var(--border-xs-white);}
@@ -94,12 +126,36 @@
 .border-lg {border: var(--border-lg);}
 .border-transparent { border: var(--border-transparent);}
 
+.bt-none { border-top: 0;}
+.bb-none { border-bottom: 0;}
+.bl-none { border-left: 0;}
+.br-none { border-right: 0;}
+
+
 /*** Images ***/
 .logo-width {max-width: 10rem;} /* Loggo storlek */
-.img-lg-width {max-width: 60%;}
+.img-lg-width { max-width: 100%; height: auto;}
+.img-product {
+    width: 150px;
+    height: 150px;
+}
 
+  .searchbar {
+    width: 100%;
+    border: 2px solid var(--color-primary);
+    padding: var(--distance-1);
+    
+  }
 
-
+ .searchbutton {
+    width: 25px;
+    height: 25px;
+    border: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 15px;
+  }
 
 
 

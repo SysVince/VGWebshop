@@ -1,0 +1,29 @@
+@media only screen and (max-width: 78.125em) { /* 1250px / 16px = 78.125em */
+    html { font-size: 50%;} /*Gå ner från 62.5% till 50% font-size */
+    .searchbutton{ width: 24px; height: 24px; } /*Pga mindre fontsize så linade button ej upp med searchbar*/
+}
+
+@media screen and (max-width: 38.75em){ /* 620px / 16px = 38.75em */
+
+    
+}
+
+@media screen and (max-width: 35em){ /* 560px / 16px = 35em */
+    .dropbtn { padding: 10px; font-size: 10px;}
+    .dropdown-content { min-width: 102px }
+    section.flex-mq-column > div div { flex-direction: column; } /*(Produkter)*/
+    section > div div p {margin-bottom: var(--distance-6);}
+}
+
+@media screen and (max-width: 31.25em){ /* 500px / 16px = 31.25em */
+    section.flex-mq-menuProd { flex-direction: column; } /*(Menu & Produkter)*/
+    .nav-mq-phone {display: none;}
+    section.flex-mq-column > div div.ml-6 {margin-left: 0;}
+    .menu-mq {display: block;}
+}
+
+@media screen and (max-width: 25em){ /* 400px / 16px = 25em */
+    .nav-mq-email {display: none;}
+    .search-mq-1 {display: none;}
+    .search-mq-2 {display: flex;}
+}

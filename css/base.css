@@ -3,13 +3,13 @@
 :root {
     /* Root används för att skapa variabler */
     /*** Base Colors ***/
-    --color-primary: rgb(43, 41, 146);
-    --color-secondary: #adb3b8;
-    --color-success: #b5d56a;
-    --color-info: #84bed6;
+    --color-primary: #00008B;
+    --color-secondary: 	#C0C0C0 ;
+    --color-success: #57c760;
+    --color-info: #5393cf;
     --color-warning: #f0c24b;
     --color-danger: #ea7066;
-    --color-light: #f8f9fa;
+    --color-light: #e9ebec;
     --color-dark: #343a40;
     --color-white: #ffffff;
     --color-cozy: #ea77ad;
@@ -35,7 +35,7 @@
     --distance-0: 0rem;
     --distance-1: .25rem;
     --distance-2: .5rem;
-    --distance-3: 1rem;
+    --distance-3: .75rem;
     --distance-4: 1rem;
     --distance-5: 1.5rem;
     --distance-6: 2rem;
@@ -87,15 +87,20 @@ body {
     min-height: 100vh; /* 100% viewport height, skärmens max px */
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Alla .h1-.h6 klasser och h1-h6 element */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: "Dosis", "Open Sans", sans-serif;
     font-weight: 700; /* Tjockleken på fonten */
     letter-spacing: 0.05rem; /* Mellanrum mellan varje bokstav */
 }
-.h1, h1{
+/* .h1, h1{
     font-size: var(--distance-14);
-}
+} */
 
 
 /*** Background And Button Colors ***/

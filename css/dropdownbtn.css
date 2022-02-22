@@ -1,8 +1,8 @@
 .dropbtn {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 16px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 15px;
     border-color: var(--color-white);
     cursor: pointer;
   
@@ -13,28 +13,25 @@
     display: inline-block;
   }
   
-  .dropdown-content {
+  /*Background för innehållet att dem droppar ner*/
+  .dropdown-content { 
     display: none;
     position: absolute;
     background-color: var(--color-light);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    min-width: 149px;
   }
-  
-  .dropdown-content a {
+
+  /*Innehållet i dropdown*/
+  .dropdown-content a { 
     color: var(--color-dark);
-    padding: 12px 16px;
+    padding: 8px;
     text-decoration: none;
     display: block;
   }
-  
+
+   /*Background när man hover över namnen*/
   .dropdown-content a:hover {background-color: var(--color-secondary)}
+
+   /*Visar listan när man hover över button*/
+  .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: var(--color-secondary);
-  }
