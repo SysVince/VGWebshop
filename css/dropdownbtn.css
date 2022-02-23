@@ -1,8 +1,8 @@
 .dropbtn {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 15px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 14px;
     border-color: var(--color-white);
     cursor: pointer;
   
@@ -18,13 +18,13 @@
     display: none;
     position: absolute;
     background-color: var(--color-light);
-    min-width: 149px;
+    min-width: 126px;
   }
 
   /*Innehållet i dropdown*/
   .dropdown-content a { 
     color: var(--color-dark);
-    padding: 8px;
+    padding: 6px;
     text-decoration: none;
     display: block;
   }
