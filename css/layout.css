@@ -108,7 +108,7 @@
 
 .icon-cart {
     bottom: 10px;
-    left: 10px;
+    left: 8px;
 }
 
 .icon-rating {
@@ -160,6 +160,7 @@
     color: var(--color-white);
     cursor: pointer;
     font-size: 15px;
+   
   }
 
 
