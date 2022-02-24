@@ -94,7 +94,7 @@ a, a:hover, a:focus, a:active {
 
 /* Alla .h1-.h6 klasser och h1-h6 element */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: "Dosis", "Open Sans", sans-serif;
+    font-family: "Ubuntu", "Open Sans", sans-serif;
     font-weight: 700; /* Tjockleken på fonten */
     letter-spacing: 0.05rem; /* Mellanrum mellan varje bokstav */
 }

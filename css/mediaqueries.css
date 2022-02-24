@@ -6,6 +6,7 @@
 @media screen and (max-width: 38.75em){ /* 620px / 16px = 38.75em */
     section.flex-mq-column > div div { flex-direction: column; } /*(Produkter)*/
     section > div div p {margin-bottom: var(--distance-6);}
+    div.flex-mq-center div > h1, span {text-align: center;/*margin-left: auto; margin-right: auto;*/ }
     
 }
 
@@ -20,11 +21,12 @@
     .nav-mq-phone {display: none;}
     section.flex-mq-column > div div.ml-6 {margin-left: 0;}
     .menu-mq {display: block;}
-    div.flex-mq-center div > h1, span {margin-left: auto; margin-right: auto }
+    div.flex-mq-center div > h1, span {text-align: center;/*margin-left: auto; margin-right: auto;*/ }
 }
 
 @media screen and (max-width: 26.25em){ /* 420px / 16px = 26.25em */
     .nav-mq-email {display: none;}
     .search-mq-1 {display: none;}
     .search-mq-2 {display: flex;}
+    .logo-mq-width { max-width: 15rem;}
 }

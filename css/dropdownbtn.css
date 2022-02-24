@@ -8,17 +8,17 @@
   
   }
   
-  .dropdown {
+   .dropdown {
     position: relative;
-    display: inline-block;
-  }
+  } 
   
   /*Background för innehållet att dem droppar ner*/
   .dropdown-content { 
-    display: none;
-    position: absolute;
+    display: none; /*Den e gömd och när man har focus-within så blir ändrad till display block och den syns*/
+    position: absolute; /*Så att den "flyter" över annars blir hela container störrenär den droppar ner*/
     background-color: var(--color-light);
     min-width: 126px;
+    box-shadow: var(--shadow-large-light);
   }
 
   /*Innehållet i dropdown*/
@@ -33,5 +33,5 @@
   .dropdown-content a:hover {background-color: var(--color-secondary)}
 
    /*Visar listan när man hover över button*/
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:focus-within .dropdown-content {display: block;}
   
