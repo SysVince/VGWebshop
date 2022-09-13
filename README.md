@@ -1,4 +1,3 @@
 # Webshop
-Webshop HTML/CSS
+Webshop gjort i ren HTML/CSS
 
-Uppgift Webshop av Vince Tran
